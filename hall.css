@@ -891,6 +891,12 @@ form {
     margin-top: 30px;
 }
 
+.inputcontact span{
+    font-size: 14px;
+    color: red;
+
+}
+
 .inputcontact .inputfield {
     display: flex;
     flex-direction: column;

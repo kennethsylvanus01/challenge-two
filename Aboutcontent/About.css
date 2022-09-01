@@ -8,6 +8,7 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    /* border: 1px solid red; */
 }
 
 /*header section*/
@@ -88,6 +89,14 @@ header {
     font-weight: 400;
     font-size: 14px;
     line-height: 7px;
+}
+
+.navbar__toggle{
+    display: none;
+}
+
+.nabar_times{
+    display: none;
 }
 
 .navbar__btn {
@@ -557,7 +566,7 @@ header {
         display: none;
     }
 
-    .navbar__menu.active {
+    .navbar__menu .visible {
         background: #131313;
         top: 100%;
         opacity: 1;
@@ -571,6 +580,13 @@ header {
         padding-left: 25px;
     }
 
+
+    /*visible*/
+    .visible {
+        display: block;
+    }
+
+    /*visible*/
     .navbar__toggle .bar {
         width: 25px;
         height: 3px;
@@ -605,27 +621,35 @@ header {
 
     #mobile-menu {
         position: absolute;
-        top: 49%;
+        top: 41%;
         right: 5%;
         transform: translate(5%, 20%);
     }
 
-    .navbar__toggle .bar {
-        display: block;
+    .navbar__toggle {
+        /* display: block; */
+        font-size: 30px;
+        color: #fff;
         cursor: pointer;
     }
 
-    #mobile-menu:is-active .bar:nth-child(2) {
-        opacity: 0;
+    .nabar_times {
+        font-size: 50px;
+        color: #fff;
+        cursor: pointer;
+        position: absolute;
+        top: 41%;
+        right: 4%;
     }
 
-    #mobile-menu:is-active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
+    .inactive {
+        display: none;
     }
 
-    #mobile-menu:is-active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
+    .active {
+        /* display: block; */
     }
+
 
     /*verification section*/
     .card {
@@ -689,7 +713,7 @@ header {
         margin-top: 20%;
     }
 
-    .executives{
+    .executives {
         margin-top: 30px;
     }
 
@@ -743,27 +767,27 @@ header {
         text-align: center;
     }
 
-    .teamholder h2{
+    .teamholder h2 {
         text-align: center;
     }
 
-    .teamholder p{
+    .teamholder p {
         text-align: center;
     }
 
-    .sectioncardig{
+    .sectioncardig {
         text-align: center;
     }
 
-    .sectioncardone h2{
+    .sectioncardone h2 {
         text-align: center;
     }
 
-    .sectioncardone p{
+    .sectioncardone p {
         text-align: center;
     }
 
-    .slidder{
+    .slidder {
         margin-top: 40px;
     }
 }

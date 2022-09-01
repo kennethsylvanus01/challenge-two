@@ -1,10 +1,19 @@
-const menu = document.querySelector('#mobile-menu');
-const menulinks = document.querySelector('.nav__menu');
+const close = document.querySelector('.nabar_times');
+const menuOpen = document.querySelector('.navbar__toggle');
 
 //display mobile menu
 const mobileMenu = () => {
-    menu.classList.toggle('is-active');
-    menulinks.classList.toggle('active');
+    menuOpen.classList.toggle('inactive');
+    close.classList.toggle('inactive');
 }
+menuOpen.addEventListener('click', mobileMenu);
 
-menu.addEventListener('click', mobileMenu);
+
+
+const closeFunction =() => {
+    menuOpen.classList.toggle('inactive');
+    close.classList.toggle('inactive');
+}
+close.addEventListener('click', closeFunction);
+
+
