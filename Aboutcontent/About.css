@@ -305,7 +305,7 @@ header {
     text-align: left;
     color: #fff;
     padding-top: 120px;
-    /* padding-left: 10px; */
+    padding-left: 55px;
 }
 
 .executiveheader p {
@@ -316,6 +316,7 @@ header {
     letter-spacing: 0em;
     text-align: left;
     color: #fff;
+    padding-left: 55px;
 }
 
 .mentor1 {
